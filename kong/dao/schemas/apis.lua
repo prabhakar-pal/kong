@@ -163,7 +163,8 @@ return {
     request_path = {type = "string", unique = true, func = check_request_path},
     strip_request_path = {type = "boolean", default = false},
     upstream_url = {type = "url", required = true, func = validate_upstream_url_protocol},
-    preserve_host = {type = "boolean", default = false}
+    preserve_host = {type = "boolean", default = false},
+    _id = {type = "id", required = false}
   },
   marshall_event = function(self, t)
     return { id = t.id }

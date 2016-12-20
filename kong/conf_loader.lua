@@ -56,7 +56,7 @@ local CONF_INFERENCES = {
   cluster_advertise = {typ = "string"},
   nginx_worker_processes = {typ = "string"},
 
-  database = {enum = {"postgres", "cassandra"}},
+  database = {enum = {"postgres", "cassandra","mongodb"}},
   pg_port = {typ = "number"},
   pg_ssl = {typ = "boolean"},
   pg_ssl_verify = {typ = "boolean"},
@@ -71,6 +71,10 @@ local CONF_INFERENCES = {
   cassandra_timeout = {typ = "number"},
   cassandra_ssl = {typ = "boolean"},
   cassandra_ssl_verify = {typ = "boolean"},
+
+  mongo_contact_points = {typ = "array"},
+  mongo_port = {typ = "number"},
+  mongo_database = {typ = "string"},
 
   cluster_profile = {enum = {"local", "lan", "wan"}},
   cluster_ttl_on_failure = {typ = "number"},

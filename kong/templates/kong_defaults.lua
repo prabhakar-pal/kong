@@ -36,6 +36,11 @@ cassandra_ssl_verify = off
 cassandra_username = kong
 cassandra_password = NONE
 
+mongo_contact_points = 127.0.0.1
+mongo_port = 27017
+mongo_database=mongokong_db
+mongo_keyspace = kong
+
 cluster_listen = 0.0.0.0:7946
 cluster_listen_rpc = 127.0.0.1:7373
 cluster_advertise = NONE

@@ -48,7 +48,8 @@ return {
     enabled = {
       type = "boolean",
       default = true
-    }
+    },
+    _id = {type = "string", required = false}
   },
   marshall_event = function(self, plugin_t)
     local result = {

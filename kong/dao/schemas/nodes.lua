@@ -4,7 +4,8 @@ return {
   fields = {
     name = {type = "string"},
     created_at = {type = "timestamp", dao_insert_value = true,required = true},
-    cluster_listening_address = {type = "string", required = true}
+    cluster_listening_address = {type = "string", required = true},
+    _id = {type = "id", required = false}
   },
   marshall_event = function(self, t)
     return { name = t.name }
